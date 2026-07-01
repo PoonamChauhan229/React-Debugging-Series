@@ -1,0 +1,15 @@
+Component Render 
+    ↓ 
+useEffect Executes 
+    ↓ 
+setProduct() 
+    ↓ 
+Product State Changes 
+    ↓ 
+Component Re-renders 
+    ↓ 
+Dependency Changed 
+    ↓ 
+useEffect Executes Again 
+    ↓ 
+Infinite Loop
