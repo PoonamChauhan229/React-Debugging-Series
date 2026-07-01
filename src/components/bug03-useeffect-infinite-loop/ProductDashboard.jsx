@@ -10,20 +10,22 @@ const ProductDashboard = () => {
 
   console.log("Component Rendered");
 
+//Bug:
 // useEffect(() => {
 //   setProduct((prev) => ({
 //     ...prev,
 //     stock: prev.stock + 1,
 //   }));
 // }, [[product]]);
-  
+
+// Fix
 useEffect(() => {
   setProduct((prev) => ({
     ...prev,
     stock: prev.stock + 1,
   }));
 }, []);
-
+  
 return (
     <div className="dashboard-container">
       <div className="dashboard-card">
