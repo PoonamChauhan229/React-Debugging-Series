@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import "./UserProfile.css";
 
 const UserProfile = () => {
@@ -10,14 +10,28 @@ const UserProfile = () => {
   });
 
   //Bug: Updating state during render
- 
+  //    setUser({
+      //   ...user,
+      //   role: "MERN Stack Developer",
+      // });
+      
+    
+  //  Fix1:
+      // const updateProfile=()=>{
+      //    setUser({
+      //   ...user,
+      //   role: "MERN Stack Developer",
+      // });
+      // }
 
-  const updateProfile=()=>{
-     setUser({
-    ...user,
-    role: "MERN Stack Developer",
-  });
-  }
+  // Fix 2
+  useEffect(()=>{
+       setUser({
+        ...user,
+        role: "MERN Stack Developer",
+      });
+  },[])
+
 
   return (
     <div className="profile-container">
@@ -50,7 +64,7 @@ const UserProfile = () => {
           </p>
         </div>
 
-        <button onClick={updateProfile}>Update Profile</button>
+        {/* <button onClick={updateProfile}>Update Profile</button> */}
       </div>
     </div>
   );
