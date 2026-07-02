@@ -18,6 +18,8 @@ const Newsletter = () => {
         <input
           type="email"
           placeholder="Enter your email"
+          value={email}
+          onChange={(e)=>setEmail(e.target.value)}
         />
 
         <button onClick={handleSubscribe}>

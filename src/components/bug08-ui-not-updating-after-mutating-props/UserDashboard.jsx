@@ -16,7 +16,7 @@ const UserDashboard = () => {
 
         <h3>Bug #08 - UI Not Updating After Mutating Props</h3>
 
-        <UserCard user={user}/>
+        <UserCard user={user} setUser={setUser}/>
       </div>
     </div>
   );
