@@ -6,6 +6,7 @@ import EmployeeDashboard from './components/bug04-cannot-read-properties/Employe
 import MovieLibrary from './components/bug05-react-key-warning/MovieLibrary'
 import Newsletter from './components/bug06-controlled-vs-uncontrolled/Newsletter'
 import TaskManager from './components/bug07-component-not-rerendering/TaskManager'
+import UserDashboard from './components/bug08-ui-not-updating-after-mutating-props/UserDashboard'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
     {/* <EmployeeDashboard/> */}
     {/* <MovieLibrary/> */}
     {/* <Newsletter/> */}
-    <TaskManager/>
+    {/* <TaskManager/> */}
+    <UserDashboard/>
    
    </>
   )
