@@ -5,6 +5,7 @@ import ProductDashboard from './components/bug03-useeffect-infinite-loop/Product
 import EmployeeDashboard from './components/bug04-cannot-read-properties/EmployeeDashboard'
 import MovieLibrary from './components/bug05-react-key-warning/MovieLibrary'
 import Newsletter from './components/bug06-controlled-vs-uncontrolled/Newsletter'
+import TaskManager from './components/bug07-component-not-rerendering/TaskManager'
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
     {/* <ProductDashboard/> */}
     {/* <EmployeeDashboard/> */}
     {/* <MovieLibrary/> */}
-    <Newsletter/>
+    {/* <Newsletter/> */}
+    <TaskManager/>
    
    </>
   )
