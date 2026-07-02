@@ -3,6 +3,7 @@ import "./EmployeeDashboard.css";
 
 const EmployeeDashboard = () => {
   const [employee, setEmployee] = useState();
+  // employee=undefined
 
   useEffect(() => {
     setTimeout(() => {
@@ -16,6 +17,7 @@ const EmployeeDashboard = () => {
     }, 2000);
   }, []);
 
+  // optional chaning >> ?.
   return (
     <div className="dashboard-container">
       <div className="dashboard-card">
@@ -25,23 +27,23 @@ const EmployeeDashboard = () => {
 
         <div className="employee-details">
           <p>
-            <strong>Employee ID:</strong> {employee.id}
+            <strong>Employee ID:</strong> {employee?.id}
           </p>
 
           <p>
-            <strong>Name:</strong> {employee.name}
+            <strong>Name:</strong> {employee?.name}
           </p>
 
           <p>
-            <strong>Department:</strong> {employee.department}
+            <strong>Department:</strong> {employee?.department}
           </p>
 
           <p>
-            <strong>Experience:</strong> {employee.experience}
+            <strong>Experience:</strong> {employee?.experience}
           </p>
 
           <p>
-            <strong>Email:</strong> {employee.email}
+            <strong>Email:</strong> {employee?.email}
           </p>
         </div>
       </div>
