@@ -1,12 +1,21 @@
-const UserCard = ({ user}) => {
-  const updateRole = () => {
-    // Mutating the prop directly
-    user.role = "MERN Stack Developer";
+const UserCard = ({ user,setUser}) => {
+  // Bug
+  // const updateRole = () => {
+  //   // Mutating the prop directly
+  //   user.role = "MERN Stack Developer";
 
-    console.log("Updated Object:", user);
+  //   console.log("Updated Object:", user);
 
-    alert("Check the console!");
-  };
+  //   alert("Check the console!");
+  // };
+
+  // Fix Bug:
+ const updateRole=()=>{
+  setUser({
+    ...user,
+    role : "MERN Stack Developer"
+  })
+ }
 
   return (
     <div className="user-card">

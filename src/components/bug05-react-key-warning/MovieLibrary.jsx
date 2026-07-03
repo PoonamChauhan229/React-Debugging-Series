@@ -41,7 +41,7 @@ const MovieLibrary = () => {
 
         <div className="movie-list">
           {movies.map((movie) => (
-            <div className="movie-card">
+            <div className="movie-card" key={movie.id}>
               <h4>{movie.title}</h4>
 
               <p>

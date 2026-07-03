@@ -15,19 +15,35 @@ const TaskManager = () => {
     },
   ]);
 
-  const addTask = () => {
-    // Mutating the original state
-    tasks.push({
+  // const addTask = () => {
+  //   // Bug
+  //   // Mutating the original state 
+  //   tasks.push([
+  //     ...tasks,
+  //     {
+  //     id: 3,
+  //     title: "Practice Debugging",
+  //     status: "Pending",
+  //   }
+  //   ]);
+
+  //   // Same array reference
+  //   setTasks(tasks);
+  // };
+
+  const addTask=()=>{
+    // create a new array , using spread operator
+    setTasks([
+      ...tasks,
+      {
       id: 3,
       title: "Practice Debugging",
       status: "Pending",
-    });
+    }
+    ])
+  }
 
-    // Same array reference
-    setTasks(tasks);
-  };
-
-  return (
+   return (
     <div className="task-container">
       <div className="task-card">
         <h2>React Debugging Series</h2>
