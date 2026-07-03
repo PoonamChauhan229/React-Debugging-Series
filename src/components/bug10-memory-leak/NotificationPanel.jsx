@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./NotificationPanel.css";
 import NotificationCounter from "./NotiifcationCounter";
 
 const NotificationPanel = () => {
-  const [notifications, setNotifications] = useState(0);
+ 
   const [showPanel, setShowPanel] = useState(true);
 
   return (
@@ -21,16 +21,11 @@ const NotificationPanel = () => {
         </button>
 
         {showPanel && (
-          <NotificationCounter
-            notifications={notifications}
-            setNotifications={setNotifications}
-          />
+          <NotificationCounter/>
         )}
       </div>
     </div>
   );
 };
-
-<NotificationCounter/>
 
 export default NotificationPanel;

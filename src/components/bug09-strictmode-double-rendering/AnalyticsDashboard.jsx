@@ -6,7 +6,7 @@ const AnalyticsDashboard = () => {
 
   useEffect(() => {
     console.log("Fetching analytics data...");
-  }, []);
+  }, []); // run only once
 
   return (
     <div className="dashboard-container">
