@@ -9,6 +9,7 @@ import TaskManager from './components/bug07-component-not-rerendering/TaskManage
 import UserDashboard from './components/bug08-ui-not-updating-after-mutating-props/UserDashboard'
 import AnalyticsDashboard from './components/bug09-strictmode-double-rendering/AnalyticsDashboard'
 import NotificationPanel from './components/bug10-memory-leak/NotificationPanel'
+import ProjectBoard from './components/bug11-state-mutation/ProjectBoard'
 
 function App() {
 
@@ -24,7 +25,8 @@ function App() {
     {/* <TaskManager/> */}
     {/* <UserDashboard/> */}
     {/* <AnalyticsDashboard/> */}
-    <NotificationPanel/>
+    {/* <NotificationPanel/> */}
+    <ProjectBoard/>
    
    </>
   )
