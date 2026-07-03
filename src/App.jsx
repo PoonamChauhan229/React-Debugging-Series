@@ -8,6 +8,7 @@ import Newsletter from './components/bug06-controlled-vs-uncontrolled/Newsletter
 import TaskManager from './components/bug07-component-not-rerendering/TaskManager'
 import UserDashboard from './components/bug08-ui-not-updating-after-mutating-props/UserDashboard'
 import AnalyticsDashboard from './components/bug09-strictmode-double-rendering/AnalyticsDashboard'
+import NotificationPanel from './components/bug10-memory-leak/NotificationPanel'
 
 function App() {
 
@@ -22,7 +23,8 @@ function App() {
     {/* <Newsletter/> */}
     {/* <TaskManager/> */}
     {/* <UserDashboard/> */}
-    <AnalyticsDashboard/>
+    {/* <AnalyticsDashboard/> */}
+    <NotificationPanel/>
    
    </>
   )
