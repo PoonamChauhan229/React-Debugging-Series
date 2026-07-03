@@ -7,6 +7,7 @@ import MovieLibrary from './components/bug05-react-key-warning/MovieLibrary'
 import Newsletter from './components/bug06-controlled-vs-uncontrolled/Newsletter'
 import TaskManager from './components/bug07-component-not-rerendering/TaskManager'
 import UserDashboard from './components/bug08-ui-not-updating-after-mutating-props/UserDashboard'
+import AnalyticsDashboard from './components/bug09-strictmode-double-rendering/AnalyticsDashboard'
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
     {/* <MovieLibrary/> */}
     {/* <Newsletter/> */}
     {/* <TaskManager/> */}
-    <UserDashboard/>
+    {/* <UserDashboard/> */}
+    <AnalyticsDashboard/>
    
    </>
   )
