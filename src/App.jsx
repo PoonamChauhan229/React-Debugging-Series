@@ -30,10 +30,9 @@ function App() {
     {/* <AnalyticsDashboard/> */}
     {/* <NotificationPanel/> */}
     {/* <ProjectBoard/> */}
-    {/* <ProductCatalog/> */}
-    <UserSearch/>
-    {/* <ProductCatalog/> */}
-    <CountdownTimer/>
+    {/* <ProductCatalog/> */} 
+    {/* <CountdownTimer/> */}
+      <UserSearch/>
    
    </>
   )
