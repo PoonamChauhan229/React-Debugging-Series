@@ -29,7 +29,7 @@ const StudentList = () => {
           <div className="student-card" key={student.id}>
             <span>{student.name}</span>
 
-            {/* ❌ Bug */}
+            {/*Bug */}
             <button onClick={removeStudent(student.id)}>
               Remove
             </button>

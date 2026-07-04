@@ -13,6 +13,7 @@ import ProjectBoard from './components/bug11-state-mutation/ProjectBoard'
 import ProductCatalog from './components/bug12-infinite-api-calls/ProductCatalog'
 import UserSearch from './components/bug14-dependency-array-mistakes/UserSearch'
 import CountdownTimer from './components/bug13-stale-closures/CountdownTimer'
+import StudentList from './components/bug15-event-handler-mistakes/StudentList'
 
 function App() {
 
@@ -32,8 +33,9 @@ function App() {
     {/* <ProjectBoard/> */}
     {/* <ProductCatalog/> */} 
     {/* <CountdownTimer/> */}
-      <UserSearch/>
-   
+    {/* <UserSearch/> */}
+    <StudentList/>
+
    </>
   )
 }
