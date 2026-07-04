@@ -4,11 +4,26 @@ import "./CountdownTimer.css";
 const CountdownTimer = () => {
   const [count, setCount] = useState(10);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log("Count:", count);
+  // Bug
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     console.log("Count:", count);
 
-      setCount(count - 1);
+  //     setCount(count - 1);
+  //   }, 1000);
+
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  // Fix Bug:
+    useEffect(() => {
+    const interval = setInterval(() => {
+      // Functional Update
+     
+      setCount((prev)=>{
+         console.log("Count:", prev);
+        return prev-1
+      });
     }, 1000);
 
     return () => clearInterval(interval);

@@ -16,7 +16,7 @@ const ProductCatalog = () => {
       })
       .catch((error) => console.error(error));
 
-  }); 
+  },[]); 
   return (
     <div className="catalog-container">
       <div className="catalog-card">

@@ -20,17 +20,29 @@ const ProjectBoard = () => {
     },
   ]);
 
+  // Bug:
+  // const completeProject = (id) => {
+  //   const project = projects.find((project) => project.id === id);
+
+  //   //Mutating the existing object
+  //   project.status = "Completed";
+
+  //   console.log("Updated Projects:", projects);
+
+  //   //Passing the same array reference
+  //   setProjects(projects);
+  // };
+
+// Fix Bug:
   const completeProject = (id) => {
-    const project = projects.find((project) => project.id === id);
+    const project = projects.map((project) => project.id === id ?{
+      ...project,
+      status:"Completed"
+    }:project);
 
-    //Mutating the existing object
-    project.status = "Completed";
+    setProjects(project)
 
-    console.log("Updated Projects:", projects);
-
-    //Passing the same array reference
-    setProjects(projects);
-  };
+  }
 
   return (
     <div className="board-container">
