@@ -16,6 +16,7 @@ import CountdownTimer from './components/bug13-stale-closures/CountdownTimer'
 import StudentList from './components/bug15-event-handler-mistakes/StudentList'
 import Dashboard from './components/bug16-react-memo-not-working/Dashboard'
 import EmployeeDirectory from './components/bug17-usememo-mistakes/EmployeeDirectory'
+import ShoppingCart from './components/bug18-usecallback-mistakes/ShoppingCart'
 
 function App() {
 
@@ -38,7 +39,8 @@ function App() {
     {/* <UserSearch/> */}
     {/* <StudentList/> */}
     {/* <Dashboard/> */}
-    <EmployeeDirectory/>
+    {/* <EmployeeDirectory/> */}
+    <ShoppingCart/>
 
    </>
   )
