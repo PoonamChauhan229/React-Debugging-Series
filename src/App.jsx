@@ -15,6 +15,7 @@ import UserSearch from './components/bug14-dependency-array-mistakes/UserSearch'
 import CountdownTimer from './components/bug13-stale-closures/CountdownTimer'
 import StudentList from './components/bug15-event-handler-mistakes/StudentList'
 import Dashboard from './components/bug16-react-memo-not-working/Dashboard'
+import EmployeeDirectory from './components/bug17-usememo-mistakes/EmployeeDirectory'
 
 function App() {
 
@@ -36,7 +37,8 @@ function App() {
     {/* <CountdownTimer/> */}
     {/* <UserSearch/> */}
     {/* <StudentList/> */}
-    <Dashboard/>
+    {/* <Dashboard/> */}
+    <EmployeeDirectory/>
 
    </>
   )
