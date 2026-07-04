@@ -14,6 +14,7 @@ import ProductCatalog from './components/bug12-infinite-api-calls/ProductCatalog
 import UserSearch from './components/bug14-dependency-array-mistakes/UserSearch'
 import CountdownTimer from './components/bug13-stale-closures/CountdownTimer'
 import StudentList from './components/bug15-event-handler-mistakes/StudentList'
+import Dashboard from './components/bug16-react-memo-not-working/Dashboard'
 
 function App() {
 
@@ -34,7 +35,8 @@ function App() {
     {/* <ProductCatalog/> */} 
     {/* <CountdownTimer/> */}
     {/* <UserSearch/> */}
-    <StudentList/>
+    {/* <StudentList/> */}
+    <Dashboard/>
 
    </>
   )
