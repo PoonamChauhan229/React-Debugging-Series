@@ -10,6 +10,7 @@ import UserDashboard from './components/bug08-ui-not-updating-after-mutating-pro
 import AnalyticsDashboard from './components/bug09-strictmode-double-rendering/AnalyticsDashboard'
 import NotificationPanel from './components/bug10-memory-leak/NotificationPanel'
 import ProjectBoard from './components/bug11-state-mutation/ProjectBoard'
+import ProductCatalog from './components/bug12-infinite-api-calls/ProductCatalog'
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
     {/* <UserDashboard/> */}
     {/* <AnalyticsDashboard/> */}
     {/* <NotificationPanel/> */}
-    <ProjectBoard/>
+    {/* <ProjectBoard/> */}
+    <ProductCatalog/>
    
    </>
   )
