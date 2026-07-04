@@ -11,6 +11,7 @@ import AnalyticsDashboard from './components/bug09-strictmode-double-rendering/A
 import NotificationPanel from './components/bug10-memory-leak/NotificationPanel'
 import ProjectBoard from './components/bug11-state-mutation/ProjectBoard'
 import ProductCatalog from './components/bug12-infinite-api-calls/ProductCatalog'
+import UserSearch from './components/bug14-dependency-array-mistakes/UserSearch'
 import CountdownTimer from './components/bug13-stale-closures/CountdownTimer'
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
     {/* <AnalyticsDashboard/> */}
     {/* <NotificationPanel/> */}
     {/* <ProjectBoard/> */}
+    {/* <ProductCatalog/> */}
+    <UserSearch/>
     {/* <ProductCatalog/> */}
     <CountdownTimer/>
    
