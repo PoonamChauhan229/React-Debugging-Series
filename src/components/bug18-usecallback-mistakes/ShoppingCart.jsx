@@ -2,21 +2,21 @@ import { useCallback, useState } from "react";
 import CartItems from "./CartItems";
 import "./ShoppingCart.css";
 
+const items = [
+  {
+    id: 1,
+    name: "Laptop",
+    price: "$1200",
+  },
+  {
+    id: 2,
+    name: "Headphones",
+    price: "$150",
+  },
+];
+
 const ShoppingCart = () => {
   const [cartCount, setCartCount] = useState(2);
-
-  const items = [
-    {
-      id: 1,
-      name: "Laptop",
-      price: "$1200",
-    },
-    {
-      id: 2,
-      name: "Headphones",
-      price: "$150",
-    },
-  ];
 
   const handleCheckout = useCallback(() => {
     console.log("Proceeding to Checkout...");
@@ -29,13 +29,16 @@ const ShoppingCart = () => {
 
         <h3>Bug #18 - useCallback Mistakes</h3>
 
-        <h2>Cart Items : {cartCount}</h2>
+        <div className="cart-show">
+          <h2>Cart Items</h2>
+          <h2>{cartCount}</h2>
+        </div>
 
         <button
-        className="add-item"
+          className="add-item"
           onClick={() => setCartCount(cartCount + 1)}
         >
-          Add Item
+          + Add Item
         </button>
 
         <CartItems
@@ -47,7 +50,6 @@ const ShoppingCart = () => {
           Open the browser console and watch.
         </h5>
       </div>
-      
     </div>
   );
 };

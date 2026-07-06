@@ -7,11 +7,15 @@ const CartItems = React.memo(({ items, onCheckout }) => {
     <div className="cart-list">
       {items.map((item) => (
         <div className="cart-item" key={item.id}>
-          <div>
-            <h4>{item.name} - {item.price}</h4>
+          <div className="item-details">
+            <h4>{item.name}</h4>
+            <p>{item.price}</p>
           </div>
 
-          <button onClick={onCheckout}>
+          <button
+            className="checkout-btn"
+            onClick={onCheckout}
+          >
             Checkout
           </button>
         </div>
