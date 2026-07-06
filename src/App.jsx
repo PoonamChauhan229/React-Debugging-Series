@@ -17,7 +17,7 @@ import StudentList from './components/bug15-event-handler-mistakes/StudentList'
 import Dashboard from './components/bug16-react-memo-not-working/Dashboard'
 import EmployeeDirectory from './components/bug17-usememo-mistakes/EmployeeDirectory'
 import ShoppingCart from './components/bug18-usecallback-mistakes/ShoppingCart'
-import MusicPlayer from './components/bug19-context-api-rerender/MusicPlayer'
+import HospitalDashboard from './components/bug19-context-value-not-memoized/HospitalDashboard'
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
     {/* <Dashboard/> */}
     {/* <EmployeeDirectory/> */}
     {/* <ShoppingCart/> */}
-    <MusicPlayer/>
+    <HospitalDashboard/>
 
    </>
   )
