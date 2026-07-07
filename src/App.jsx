@@ -18,6 +18,7 @@ import Dashboard from './components/bug16-react-memo-not-working/Dashboard'
 import EmployeeDirectory from './components/bug17-usememo-mistakes/EmployeeDirectory'
 import ShoppingCart from './components/bug18-usecallback-mistakes/ShoppingCart'
 import HospitalDashboard from './components/bug19-context-value-not-memoized/HospitalDashboard'
+import BookSearch from './components/bug20-debouncing-mistakes/BookSearch'
 
 function App() {
 
@@ -42,7 +43,9 @@ function App() {
     {/* <Dashboard/> */}
     {/* <EmployeeDirectory/> */}
     {/* <ShoppingCart/> */}
-    <HospitalDashboard/>
+    {/* <HospitalDashboard/> */}
+    <BookSearch/>
+
 
    </>
   )
