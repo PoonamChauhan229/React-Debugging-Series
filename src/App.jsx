@@ -21,6 +21,7 @@ import HospitalDashboard from './components/bug19-context-value-not-memoized/Hos
 import BookSearch from './components/bug20-debouncing-mistakes/BookSearch'
 import MovieSearch from './components/bug21-race-condition-api-calls/MovieSearch'
 import TeamDirectory from './components/bug22-keys-changing-on-every-render/TeamDirectory'
+import UserSettings from './components/bug23-updating-nested-state/UserSettings'
 
 function App() {
 
@@ -48,7 +49,8 @@ function App() {
     {/* <HospitalDashboard/> */}
     {/* <BookSearch/> */}
     {/* <MovieSearch/> */}
-    <TeamDirectory/>
+    {/* <TeamDirectory/> */}
+    <UserSettings/>
 
 
    </>
