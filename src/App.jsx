@@ -19,6 +19,7 @@ import EmployeeDirectory from './components/bug17-usememo-mistakes/EmployeeDirec
 import ShoppingCart from './components/bug18-usecallback-mistakes/ShoppingCart'
 import HospitalDashboard from './components/bug19-context-value-not-memoized/HospitalDashboard'
 import BookSearch from './components/bug20-debouncing-mistakes/BookSearch'
+import MovieSearch from './components/bug21-race-condition-api-calls/MovieSearch'
 
 function App() {
 
@@ -44,7 +45,8 @@ function App() {
     {/* <EmployeeDirectory/> */}
     {/* <ShoppingCart/> */}
     {/* <HospitalDashboard/> */}
-    <BookSearch/>
+    {/* <BookSearch/> */}
+    <MovieSearch/>
 
 
    </>
