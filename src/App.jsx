@@ -22,6 +22,7 @@ import BookSearch from './components/bug20-debouncing-mistakes/BookSearch'
 import MovieSearch from './components/bug21-race-condition-api-calls/MovieSearch'
 import TeamDirectory from './components/bug22-keys-changing-on-every-render/TeamDirectory'
 import UserSettings from './components/bug23-updating-nested-state/UserSettings'
+import RestaurantMenu from './components/bug24-array-state-update-mistakes/RestaurantMenu'
 
 function App() {
 
@@ -50,7 +51,8 @@ function App() {
     {/* <BookSearch/> */}
     {/* <MovieSearch/> */}
     {/* <TeamDirectory/> */}
-    <UserSettings/>
+    {/* <UserSettings/> */}
+    <RestaurantMenu/>
 
 
    </>
