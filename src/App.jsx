@@ -23,6 +23,8 @@ import MovieSearch from './components/bug21-race-condition-api-calls/MovieSearch
 import TeamDirectory from './components/bug22-keys-changing-on-every-render/TeamDirectory'
 import UserSettings from './components/bug23-updating-nested-state/UserSettings'
 import RestaurantMenu from './components/bug24-array-state-update-mistakes/RestaurantMenu'
+import CartItems from './components/bug18-usecallback-mistakes/CartItems'
+import CarDetails from './components/bug25-object-state-mutation/CarDetails'
 
 function App() {
 
@@ -52,7 +54,8 @@ function App() {
     {/* <MovieSearch/> */}
     {/* <TeamDirectory/> */}
     {/* <UserSettings/> */}
-    <RestaurantMenu/>
+    {/* <RestaurantMenu/> */}
+    <CarDetails/>
 
 
    </>
