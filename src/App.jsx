@@ -20,6 +20,7 @@ import ShoppingCart from './components/bug18-usecallback-mistakes/ShoppingCart'
 import HospitalDashboard from './components/bug19-context-value-not-memoized/HospitalDashboard'
 import BookSearch from './components/bug20-debouncing-mistakes/BookSearch'
 import MovieSearch from './components/bug21-race-condition-api-calls/MovieSearch'
+import TeamDirectory from './components/bug22-keys-changing-on-every-render/TeamDirectory'
 
 function App() {
 
@@ -46,7 +47,8 @@ function App() {
     {/* <ShoppingCart/> */}
     {/* <HospitalDashboard/> */}
     {/* <BookSearch/> */}
-    <MovieSearch/>
+    {/* <MovieSearch/> */}
+    <TeamDirectory/>
 
 
    </>

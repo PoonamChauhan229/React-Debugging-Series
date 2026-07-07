@@ -1,0 +1,74 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f6f9;
+}
+
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.card{
+width:700px;
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.card h2{
+text-align:center;
+color:#2563eb;
+}
+
+.card h3{
+text-align:center;
+color:#ef4444;
+margin:15px 0 25px;
+}
+
+.refresh-btn{
+display:block;
+margin:auto;
+padding:12px 20px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:25px;
+}
+
+.employee-list{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.employee-card{
+padding:18px;
+background:#eef4ff;
+border-radius:10px;
+}
+
+.employee-card input{
+margin-top:12px;
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.note{
+margin-top:20px;
+text-align:center;
+color:#666;
+}
