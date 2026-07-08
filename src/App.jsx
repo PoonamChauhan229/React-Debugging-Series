@@ -28,43 +28,45 @@ import CarDetails from './components/bug25-object-state-mutation/CarDetails'
 import EventRegistration from './components/bug26-state-resetting-unexpectedly/EventRegistration'
 import VisitorCounter from './components/bug27-useref-doesnt-rerender-ui/VisitorCounter'
 import NotificationApp from './components/bug28-wrong-useeffect-cleanup/NotificationApp'
+import BankingDashboard from './components/bug29-auto-logout-timer/BankingDashboard'
 
 function App() {
 
 
   return (
-   <>
-    {/* <Counter/> */}
-    {/* <UserProfile/> */}
-    {/* <ProductDashboard/> */}
-    {/* <EmployeeDashboard/> */}
-    {/* <MovieLibrary/> */}
-    {/* <Newsletter/> */}
-    {/* <TaskManager/> */}
-    {/* <UserDashboard/> */}
-    {/* <AnalyticsDashboard/> */}
-    {/* <NotificationPanel/> */}
-    {/* <ProjectBoard/> */}
-    {/* <ProductCatalog/> */} 
-    {/* <CountdownTimer/> */}
-    {/* <UserSearch/> */}
-    {/* <StudentList/> */}
-    {/* <Dashboard/> */}
-    {/* <EmployeeDirectory/> */}
-    {/* <ShoppingCart/> */}
-    {/* <HospitalDashboard/> */}
-    {/* <BookSearch/> */}
-    {/* <MovieSearch/> */}
-    {/* <TeamDirectory/> */}
-    {/* <UserSettings/> */}
-    {/* <RestaurantMenu/> */}
-    {/* <CarDetails/> */}
-    {/* <EventRegistration/> */}
-    {/* <VisitorCounter/> */}
-    <NotificationApp/>
+    <>
+      {/* <Counter/> */}
+      {/* <UserProfile/> */}
+      {/* <ProductDashboard/> */}
+      {/* <EmployeeDashboard/> */}
+      {/* <MovieLibrary/> */}
+      {/* <Newsletter/> */}
+      {/* <TaskManager/> */}
+      {/* <UserDashboard/> */}
+      {/* <AnalyticsDashboard/> */}
+      {/* <NotificationPanel/> */}
+      {/* <ProjectBoard/> */}
+      {/* <ProductCatalog/> */}
+      {/* <CountdownTimer/> */}
+      {/* <UserSearch/> */}
+      {/* <StudentList/> */}
+      {/* <Dashboard/> */}
+      {/* <EmployeeDirectory/> */}
+      {/* <ShoppingCart/> */}
+      {/* <HospitalDashboard/> */}
+      {/* <BookSearch/> */}
+      {/* <MovieSearch/> */}
+      {/* <TeamDirectory/> */}
+      {/* <UserSettings/> */}
+      {/* <RestaurantMenu/> */}
+      {/* <CarDetails/> */}
+      {/* <EventRegistration/> */}
+      {/* <VisitorCounter/> */}
+      {/* <NotificationApp/> */}
+      <BankingDashboard />
 
 
-   </>
+    </>
   )
 }
 
