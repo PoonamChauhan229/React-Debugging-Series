@@ -25,6 +25,7 @@ import UserSettings from './components/bug23-updating-nested-state/UserSettings'
 import RestaurantMenu from './components/bug24-array-state-update-mistakes/RestaurantMenu'
 import CartItems from './components/bug18-usecallback-mistakes/CartItems'
 import CarDetails from './components/bug25-object-state-mutation/CarDetails'
+import EventRegistration from './components/bug26-state-resetting-unexpectedly/EventRegistration'
 
 function App() {
 
@@ -55,7 +56,8 @@ function App() {
     {/* <TeamDirectory/> */}
     {/* <UserSettings/> */}
     {/* <RestaurantMenu/> */}
-    <CarDetails/>
+    {/* <CarDetails/> */}
+    <EventRegistration/>
 
 
    </>
