@@ -26,6 +26,7 @@ import RestaurantMenu from './components/bug24-array-state-update-mistakes/Resta
 import CartItems from './components/bug18-usecallback-mistakes/CartItems'
 import CarDetails from './components/bug25-object-state-mutation/CarDetails'
 import EventRegistration from './components/bug26-state-resetting-unexpectedly/EventRegistration'
+import VisitorCounter from './components/bug27-useref-doesnt-rerender-ui/VisitorCounter'
 
 function App() {
 
@@ -57,7 +58,8 @@ function App() {
     {/* <UserSettings/> */}
     {/* <RestaurantMenu/> */}
     {/* <CarDetails/> */}
-    <EventRegistration/>
+    {/* <EventRegistration/> */}
+    <VisitorCounter/>
 
 
    </>
