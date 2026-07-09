@@ -32,6 +32,7 @@ import BankingDashboard from './components/bug29-auto-logout-timer/BankingDashbo
 import PetAdoption from './components/bug30-fetching-data-after-unmount/PetAdoption'
 import TrainSearch from './components/bug31-duplicate-api-requests/TrainSearch'
 import NutritionTracker from './components/bug32-derived-state-out-of-sync/NutritionTracker'
+import MovieBooking from './components/bug33-lifting-state-incorrectly/MovieBooking'
 
 function App() {
 
@@ -69,7 +70,8 @@ function App() {
       {/* <BankingDashboard /> */}
       {/* <PetAdoption/> */}
       {/* <TrainSearch/> */}
-      <NutritionTracker/>
+      {/* <NutritionTracker/> */}
+      <MovieBooking/>
 
     </>
   )
