@@ -8,11 +8,21 @@ const CarDetails = () => {
     color: "White",
   });
 
-  const changeColor = () => {
-    car.color = "Black";
-    console.log("Updated Object :", car);
-    setCar(car);
+  // Bug:
+  // const changeColor = () => {
+  //   car.color = "Black";
+  //   console.log("Updated Object :", car);
+  //   setCar(car);
+  // };
+
+  // Fix Bug:
+    const changeColor = () => {
+    setCar((prev)=>(
+      {...prev,color:"Black"}
+    ));
   };
+
+  
 
   return (
     <div className="container">

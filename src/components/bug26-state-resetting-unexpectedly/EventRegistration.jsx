@@ -31,7 +31,11 @@ const EventRegistration = () => {
           Switch Event
         </button>
 
-        <RegistrationForm key={eventType} />
+        {/* Bug */}
+        {/* <RegistrationForm key={eventType} /> */}
+
+        {/* Fix Bug */}
+        <RegistrationForm />
       </div>
     </div>
   );

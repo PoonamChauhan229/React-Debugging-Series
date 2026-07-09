@@ -30,7 +30,12 @@ const StudentList = () => {
             <span>{student.name}</span>
 
             {/*Bug */}
-            <button onClick={removeStudent(student.id)}>
+            {/* <button onClick={removeStudent(student.id)}>
+              Remove
+            </button> */}
+            
+            {/* Fix Bug */}
+            <button onClick={()=>removeStudent(student.id)}>
               Remove
             </button>
           </div>

@@ -3,23 +3,41 @@ import { useEffect, useState } from "react";
 const PetProfile = () => {
   const [pet, setPet] = useState(null);
 
-  useEffect(() => {
-    console.log("Fetching pet details...");
+  // Bug
+  // useEffect(() => {
+    // API request
+  //   console.log("Fetching pet details...");
+  //   const timer = setTimeout(() => {
+  //     console.log("Pet details received.");
+  //     setPet({
+  //       name: "Buddy",
+  //       breed: "Golden Retriever",
+  //       age: "2 Years",
+  //     });
+  //     console.log("State Updated");
+  //   }, 4000);
+  // }, []);
 
+  // Fix Bug:
+    useEffect(() => {
+      let isMounted=true;
+    // API request
+    console.log("Fetching pet details...");
     const timer = setTimeout(() => {
       console.log("Pet details received.");
-
-      setPet({
-        name: "Buddy",
-        breed: "Golden Retriever",
-        age: "2 Years",
-      });
-
-      console.log("State Updated");
+      if(isMounted){
+        setPet({
+          name: "Buddy",
+          breed: "Golden Retriever",
+          age: "2 Years",
+        });
+        console.log("State Updated");
+      }
     }, 4000);
-
-    // ❌ Bug:
-    // We never cancel this timeout if the component unmounts.
+    return ()=>{
+      isMounted=false;
+      clearTimeout(timer)
+    }
   }, []);
 
   return (

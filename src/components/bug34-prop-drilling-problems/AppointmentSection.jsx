@@ -1,6 +1,6 @@
 import AppointmentDetails from "./AppointmentDetails";
 
-const AppointmentSection = ({ patientName }) => {
+const AppointmentSection = () => {
 
   console.log("AppointmentSection Render");
 
@@ -9,9 +9,7 @@ const AppointmentSection = ({ patientName }) => {
 
       <h2>Appointment Section</h2>
 
-      <AppointmentDetails
-        patientName={patientName}
-      />
+      <AppointmentDetails/>
 
     </div>
   );

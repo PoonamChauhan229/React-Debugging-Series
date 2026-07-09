@@ -32,9 +32,15 @@ const TrainSearch = () => {
     }
   }, [search]);
 
-  const handleSearch = () => {
+   // Bug:
+  // const handleSearch = () => {
+  //   setSearch("Mumbai to Delhi");   
+  //   fetchTrains(); // API call manually
+  // };
+
+  // Fix Bug:
+    const handleSearch = () => {
     setSearch("Mumbai to Delhi");
-    fetchTrains();
   };
 
   return (

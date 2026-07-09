@@ -1,18 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./BankingDashboard.css";
 
 const BankingDashboard = () => {
   const [loggedIn, setLoggedIn] = useState(true);
+  const timerRef=useRef(null)
 
   useEffect(() => {
     startLogoutTimer();
+    return ()=>clearTimeout(timerRef.current)
   }, []);
 
   const startLogoutTimer = () => {
-    setTimeout(() => {
+    clearTimeout(timerRef.current)
+    timerRef.current=setTimeout(() => {
       setLoggedIn(false);
       alert("Session Expired! Logged Out.");
-    }, 10000);
+    }, 10000);//10 sec
   };
 
   const stayLoggedIn = () => {

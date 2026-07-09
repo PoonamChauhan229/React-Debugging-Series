@@ -4,10 +4,24 @@ import "./BookSearch.css";
 const BookSearch = () => {
   const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    if (search === "") return;
+  // Bug:
+  // useEffect(() => {
+  //   if (search === "") return;
 
-    console.log("API Called:", search);
+  //   console.log("API Called:", search);
+  // }, [search]);
+
+  // Fix Bug:
+   useEffect(() => {
+    if (search === "") return;
+    //setimeout
+    const timer=setTimeout(()=>{
+      console.log("API Called:", search); // API call
+    },500)
+
+    return ()=>clearTimeout(timer)
+
+    
   }, [search]);
 
 

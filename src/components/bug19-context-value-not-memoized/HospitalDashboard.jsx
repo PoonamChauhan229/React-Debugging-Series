@@ -9,17 +9,18 @@ const HospitalDashboard = () => {
   const [department] = useState("Cardiology");
   const [refreshCount, setRefreshCount] = useState(0);
 
+  // Bug:
   // const doctorData = {
   //   doctor,
   //   department,
   // };
 
-  const doctorData = useMemo(() => {
-  return {
-    doctor,
-    department,
-  };
-}, [doctor, department]);
+  // Fix Bug:
+  const doctorData=useMemo(()=>{
+    return{doctor,department}
+
+  },[doctor,department])
+
   return (
     <HospitalContext.Provider value={doctorData}>
       <div className="container">

@@ -17,7 +17,7 @@ const UserSearch = () => {
 
         setUsers(filteredUsers);
       });
-  }, []); 
+  }, [search]); 
   return (
     <div className="container">
       <div className="card">

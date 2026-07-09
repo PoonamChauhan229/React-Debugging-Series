@@ -8,9 +8,12 @@ const NutritionTracker = () => {
     dinner: 500,
   });
 
-  const [totalCalories, setTotalCalories] = useState(
-    meals.breakfast + meals.lunch + meals.dinner
-  );
+  // Bug:
+  // const [totalCalories, setTotalCalories] = useState(
+  //   meals.breakfast + meals.lunch + meals.dinner
+  // );
+
+  const totalCalories= meals.breakfast + meals.lunch + meals.dinner;
 
   const addSnack = () => {
     setMeals({

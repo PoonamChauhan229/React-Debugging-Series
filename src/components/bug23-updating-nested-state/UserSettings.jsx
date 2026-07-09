@@ -9,11 +9,22 @@ const UserSettings = () => {
       country: "India",
     },
   });
+  // Bug
+  // const updateCity = () => {
+  //   setUser({
+  //     ...user,
+  //     address: {
+  //       city: "Bangalore",
+  //     },
+  //   });
+  // };
 
+  // Fix Bug
   const updateCity = () => {
     setUser({
       ...user,
       address: {
+        ...user.address,
         city: "Bangalore",
       },
     });

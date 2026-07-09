@@ -25,10 +25,21 @@ const TeamDirectory = () => {
           Refresh Dashboard ({refresh})
         </button>
 
-        <div className="employee-list">
+        {/* Bug */}
+        {/* <div className="employee-list">
           {employees.map((employee) => (
             <EmployeeCard
               key={Math.random()}  
+              employee={employee}
+            />
+          ))}
+        </div> */}
+
+        {/* Fix Bug */}
+        <div className="employee-list">
+          {employees.map((employee) => (
+            <EmployeeCard
+              key={employee.id}  
               employee={employee}
             />
           ))}
