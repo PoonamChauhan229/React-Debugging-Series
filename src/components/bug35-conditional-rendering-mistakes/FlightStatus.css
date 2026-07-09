@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: 650px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.card h2 {
+  color: #2563eb;
+  text-align: center;
+}
+
+.card h3 {
+  color: #ef4444;
+  text-align: center;
+  margin: 15px 0 30px;
+}
+
+.flight-card {
+  background: #eef4ff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.ontime {
+  color: green;
+}
+
+.delay {
+  color: red;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}

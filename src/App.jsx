@@ -33,6 +33,7 @@ import PetAdoption from './components/bug30-fetching-data-after-unmount/PetAdopt
 import TrainSearch from './components/bug31-duplicate-api-requests/TrainSearch'
 import NutritionTracker from './components/bug32-derived-state-out-of-sync/NutritionTracker'
 import MovieBooking from './components/bug33-lifting-state-incorrectly/MovieBooking'
+import FlightStatus from './components/bug35-conditional-rendering-mistakes/FlightStatus'
 import HospitalApp from './components/bug34-prop-drilling-problems/HospitalApp'
 
 function App() {
@@ -72,6 +73,8 @@ function App() {
       {/* <PetAdoption/> */}
       {/* <TrainSearch/> */}
       {/* <NutritionTracker/> */}
+      {/* <MovieBooking/> */}
+      <FlightStatus/>
       {/* <MovieBooking/> */}
       <HospitalApp/>
 
