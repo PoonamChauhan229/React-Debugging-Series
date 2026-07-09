@@ -30,6 +30,7 @@ import VisitorCounter from './components/bug27-useref-doesnt-rerender-ui/Visitor
 import NotificationApp from './components/bug28-wrong-useeffect-cleanup/NotificationApp'
 import BankingDashboard from './components/bug29-auto-logout-timer/BankingDashboard'
 import PetAdoption from './components/bug30-fetching-data-after-unmount/PetAdoption'
+import TrainSearch from './components/bug31-duplicate-api-requests/TrainSearch'
 
 function App() {
 
@@ -65,7 +66,8 @@ function App() {
       {/* <VisitorCounter/> */}
       {/* <NotificationApp/> */}
       {/* <BankingDashboard /> */}
-      <PetAdoption/>
+      {/* <PetAdoption/> */}
+      <TrainSearch/>
 
 
     </>
