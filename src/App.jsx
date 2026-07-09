@@ -29,6 +29,7 @@ import EventRegistration from './components/bug26-state-resetting-unexpectedly/E
 import VisitorCounter from './components/bug27-useref-doesnt-rerender-ui/VisitorCounter'
 import NotificationApp from './components/bug28-wrong-useeffect-cleanup/NotificationApp'
 import BankingDashboard from './components/bug29-auto-logout-timer/BankingDashboard'
+import PetAdoption from './components/bug30-fetching-data-after-unmount/PetAdoption'
 
 function App() {
 
@@ -63,7 +64,8 @@ function App() {
       {/* <EventRegistration/> */}
       {/* <VisitorCounter/> */}
       {/* <NotificationApp/> */}
-      <BankingDashboard />
+      {/* <BankingDashboard /> */}
+      <PetAdoption/>
 
 
     </>
