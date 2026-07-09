@@ -31,6 +31,7 @@ import NotificationApp from './components/bug28-wrong-useeffect-cleanup/Notifica
 import BankingDashboard from './components/bug29-auto-logout-timer/BankingDashboard'
 import PetAdoption from './components/bug30-fetching-data-after-unmount/PetAdoption'
 import TrainSearch from './components/bug31-duplicate-api-requests/TrainSearch'
+import NutritionTracker from './components/bug32-derived-state-out-of-sync/NutritionTracker'
 
 function App() {
 
@@ -67,8 +68,8 @@ function App() {
       {/* <NotificationApp/> */}
       {/* <BankingDashboard /> */}
       {/* <PetAdoption/> */}
-      <TrainSearch/>
-
+      {/* <TrainSearch/> */}
+      <NutritionTracker/>
 
     </>
   )
