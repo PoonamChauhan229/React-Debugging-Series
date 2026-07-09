@@ -48,12 +48,10 @@ const FlightStatus = () => {
             </strong>
           </div>
 
-          {/* BUG */}
-
           <div className="row">
             <span>Estimated Delay</span>
 
-            {flight.delayMinutes && (
+            {flight.delayMinutes >0 && (
               <strong>
                 {flight.delayMinutes} Minutes
               </strong>
