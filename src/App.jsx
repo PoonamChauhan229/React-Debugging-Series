@@ -35,6 +35,7 @@ import NutritionTracker from './components/bug32-derived-state-out-of-sync/Nutri
 import MovieBooking from './components/bug33-lifting-state-incorrectly/MovieBooking'
 import FlightStatus from './components/bug35-conditional-rendering-mistakes/FlightStatus'
 import HospitalApp from './components/bug34-prop-drilling-problems/HospitalApp'
+import HotelBooking from './components/bug36-switching-controlled-uncontrolled/HotelBooking'
 
 function App() {
 
@@ -79,6 +80,9 @@ function App() {
       <FlightStatus />
 
 
+      {/* <HospitalApp/> */}
+      {/* <FlightStatus/> */}
+      <HotelBooking/>
     </>
   )
 }
