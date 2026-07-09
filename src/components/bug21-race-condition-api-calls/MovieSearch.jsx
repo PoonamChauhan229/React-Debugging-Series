@@ -5,8 +5,26 @@ const MovieSearch = () => {
   const [movie, setMovie] = useState("");
   const [result, setResult] = useState("");
 
-  useEffect(() => {
+  // Bug
+  // useEffect(() => {
+  //   if (!movie) return;
+
+  //   // Simulate different API response times
+  //   const delay = Math.random() * 3000 + 500;
+
+  //   console.log(`Request Sent : ${movie}`);
+
+  //   setTimeout(() => {
+  //     console.log(`Response Received : ${movie}`);
+
+  //     setResult(movie);
+  //   }, delay);
+  // }, [movie]);
+
+  // Fix Bug:
+    useEffect(() => {
     if (!movie) return;
+    let ignore=false
 
     // Simulate different API response times
     const delay = Math.random() * 3000 + 500;
@@ -14,10 +32,14 @@ const MovieSearch = () => {
     console.log(`Request Sent : ${movie}`);
 
     setTimeout(() => {
+      if(ignore) return;
       console.log(`Response Received : ${movie}`);
 
       setResult(movie);
     }, delay);
+    return ()=>{
+      ignore =true;
+    }
   }, [movie]);
 
   return (

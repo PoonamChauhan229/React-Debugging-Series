@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-const SeatSelector = () => {
-  const [selectedSeats, setSelectedSeats] = useState(0);
+const SeatSelector = ({selectedSeats,setSelectedSeats}) => {
 
   return (
     <div className="panel">

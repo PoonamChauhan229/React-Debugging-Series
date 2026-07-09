@@ -1,15 +1,25 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import ProductCard from "./ProductCard";
 import "./Dashboard.css";
 
 const Dashboard = () => {
   const [count, setCount] = useState(0);
 
-  const product = {
+  // Bug:
+  // const product = {
+  //   id: 1,
+  //   name: "Laptop",
+  //   price: "$1200",
+  // };
+
+  // Fix Bug
+  const product=useMemo(()=>{
+     return {
     id: 1,
     name: "Laptop",
     price: "$1200",
-  };
+  }
+  },[])
 
   return (
     <div className="container">

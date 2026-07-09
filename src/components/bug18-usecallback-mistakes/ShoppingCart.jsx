@@ -18,9 +18,15 @@ const items = [
 const ShoppingCart = () => {
   const [cartCount, setCartCount] = useState(2);
 
-  const handleCheckout = useCallback(() => {
+  // Bug
+  // const handleCheckout = useCallback(() => {
+  //   console.log("Proceeding to Checkout...");
+  // }, [cartCount]);
+
+  // Fix Bug
+    const handleCheckout = useCallback(() => {
     console.log("Proceeding to Checkout...");
-  }, [cartCount]);
+  }, []);
 
   return (
     <div className="container">

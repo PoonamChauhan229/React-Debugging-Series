@@ -2,15 +2,16 @@ import { useRef, useState } from "react";
 import "./VisitorCounter.css";
 
 const VisitorCounter = () => {
-  const visitorCount = useRef(0);
-
+  // Bug
+  // const visitorCount = useRef(0);
+  // const increaseVisitor = () => {
+  //   visitorCount.current++;
+  //   console.log("Current Visitors :", visitorCount.current);  
+  // };
+  const [visitorCount,setVisitorCount]=useState(0)
   const increaseVisitor = () => {
-    visitorCount.current++;
-
-    console.log("Current Visitors :", visitorCount.current);
-  
-  };
-
+    setVisitorCount((prev)=>prev+1)
+  }
   return (
     <div className="container">
       <div className="card">
@@ -20,8 +21,10 @@ const VisitorCounter = () => {
 
         <div className="counter-box">
           <h2>Total Visitors</h2>
-
-          <h1>{visitorCount.current}</h1>
+          {/* Bug */}
+          {/* <h1>{visitorCount.current}</h1> */}
+          {/* Fix Bug */}
+          <h1>{visitorCount}</h1>
         </div>
 
         <button

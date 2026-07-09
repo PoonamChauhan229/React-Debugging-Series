@@ -27,8 +27,19 @@ const EmployeeDirectory = () => {
     },
   ];
 
-  // ❌ Bug: Missing dependencies
-  const filteredEmployees = useMemo(() => {
+  // Bug:
+  //  const filteredEmployees = useMemo(() => {
+  //   console.log("Filtering Employees...");
+
+  //   return employees.filter((employee) =>
+  //     employee.department
+  //       .toLowerCase()
+  //       .includes(search.toLowerCase())
+  //   );
+  // }, []);
+
+  // Fix Bug:
+     const filteredEmployees = useMemo(() => {
     console.log("Filtering Employees...");
 
     return employees.filter((employee) =>
@@ -36,7 +47,8 @@ const EmployeeDirectory = () => {
         .toLowerCase()
         .includes(search.toLowerCase())
     );
-  }, []);
+  }, [employees,search]);
+
 
   return (
     <div className="container">

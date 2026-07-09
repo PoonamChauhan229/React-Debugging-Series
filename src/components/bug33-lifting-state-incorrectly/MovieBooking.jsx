@@ -1,8 +1,10 @@
 import SeatSelector from "./SeatSelector";
 import BookingSummary from "./BookingSummary";
 import "./MovieBooking.css";
+import { useState } from "react";
 
 const MovieBooking = () => {
+  const [selectedSeats, setSelectedSeats] = useState(0);
   return (
     <div className="container">
       <div className="card">
@@ -13,9 +15,9 @@ const MovieBooking = () => {
 
         <div className="layout">
 
-          <SeatSelector />
+          <SeatSelector selectedSeats={selectedSeats} setSelectedSeats={setSelectedSeats}/>
 
-          <BookingSummary />
+          <BookingSummary selectedSeats={selectedSeats}/>
 
         </div>
 

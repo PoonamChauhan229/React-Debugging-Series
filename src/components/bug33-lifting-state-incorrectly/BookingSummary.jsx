@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-const BookingSummary = () => {
-  const [selectedSeats] = useState(0);
+const BookingSummary = ({selectedSeats}) => {
 
   return (
     <div className="panel">

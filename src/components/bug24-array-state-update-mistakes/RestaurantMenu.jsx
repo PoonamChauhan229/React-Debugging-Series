@@ -8,9 +8,15 @@ const RestaurantMenu = () => {
     "Pasta",
   ]);
 
+  // Bug:
+  // const addDish = () => {
+  //   menu.push("Sandwich");
+  //   setMenu(menu);
+  // };
+
+  // Fix Bug:
   const addDish = () => {
-    menu.push("Sandwich");
-    setMenu(menu);
+    setMenu((prev)=>[...prev,"Sandwitch"]);
   };
 
   return (

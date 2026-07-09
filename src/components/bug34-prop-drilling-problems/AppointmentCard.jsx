@@ -1,6 +1,10 @@
-const AppointmentCard = ({ patientName }) => {
+import { useContext } from "react";
+import { AppointmentContext } from "./AppointmentContext";
 
-  console.log("AppointmentCard Render");
+const AppointmentCard = () => {
+const patientName=useContext(AppointmentContext)
+
+  console.log("AppointmentCard Render",patientName);
 
   return (
     <div className="appointment">
