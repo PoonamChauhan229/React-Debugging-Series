@@ -37,6 +37,7 @@ import FlightStatus from './components/bug35-conditional-rendering-mistakes/Flig
 import HospitalApp from './components/bug34-prop-drilling-problems/HospitalApp'
 import HotelBooking from './components/bug36-switching-controlled-uncontrolled/HotelBooking'
 import CourseCatalog from './components/bug37-react-lazy-import-mistakes/CourseCatalog'
+import SocialFeed from './components/bug38-optimistic-ui-rollback/SocialFeed'
 
 function App() {
 
@@ -77,14 +78,12 @@ function App() {
       {/* <NutritionTracker/> */}
       {/* <MovieBooking/> */}
       {/* <MovieBooking/> */}
-      {/* <HospitalApp /> */}
-      <FlightStatus />
-
-
       {/* <HospitalApp/> */}
       {/* <FlightStatus/> */}
       {/* <HotelBooking/> */}
-      <CourseCatalog/>
+      {/* <CourseCatalog/> */}
+      <SocialFeed/>
+      
     </>
   )
 }
