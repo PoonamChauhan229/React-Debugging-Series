@@ -38,6 +38,9 @@ import HospitalApp from './components/bug34-prop-drilling-problems/HospitalApp'
 import HotelBooking from './components/bug36-switching-controlled-uncontrolled/HotelBooking'
 import CourseCatalog from './components/bug37-react-lazy-import-mistakes/CourseCatalog'
 import SocialFeed from './components/bug38-optimistic-ui-rollback/SocialFeed'
+import ConfirmationPage from './components/bug39-react-router-state-lost/ConfirmationPage'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import BookingPage from './components/bug39-react-router-state-lost/BookingPage'
 
 function App() {
 
@@ -82,8 +85,18 @@ function App() {
       {/* <FlightStatus/> */}
       {/* <HotelBooking/> */}
       {/* <CourseCatalog/> */}
-      <SocialFeed/>
-      
+      {/* <SocialFeed/> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<BookingPage />} />
+          <Route
+            path="/confirmation"
+            element={<ConfirmationPage />}
+          />
+        </Routes>
+      </BrowserRouter>
+
     </>
   )
 }
