@@ -36,6 +36,7 @@ import MovieBooking from './components/bug33-lifting-state-incorrectly/MovieBook
 import FlightStatus from './components/bug35-conditional-rendering-mistakes/FlightStatus'
 import HospitalApp from './components/bug34-prop-drilling-problems/HospitalApp'
 import HotelBooking from './components/bug36-switching-controlled-uncontrolled/HotelBooking'
+import CourseCatalog from './components/bug37-react-lazy-import-mistakes/CourseCatalog'
 
 function App() {
 
@@ -77,7 +78,8 @@ function App() {
       {/* <MovieBooking/> */}
       {/* <HospitalApp/> */}
       {/* <FlightStatus/> */}
-      <HotelBooking/>
+      {/* <HotelBooking/> */}
+      <CourseCatalog/>
     </>
   )
 }
