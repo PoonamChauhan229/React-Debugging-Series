@@ -4,6 +4,8 @@ import "./BookingPage.css";
 const ConfirmationPage = () => {
   const location = useLocation();
 
+  const passenger = location.state?.passengerName;
+
   return (
     <div className="container">
       <div className="card">
@@ -13,11 +15,20 @@ const ConfirmationPage = () => {
         </h2>
 
         <h3 className="text">
-          Passenger :
-          {" "}
-          {location.state?.passengerName ||
-            "No Passenger Data"}
+          Passenger:
         </h3>
+
+        <h2 className="heading">
+          {passenger || "No Passenger Data"}
+        </h2>
+
+        {!passenger && (
+          <p className="error">
+            This page was opened directly.
+            <br />
+            Navigation state is unavailable.
+          </p>
+        )}
 
       </div>
     </div>

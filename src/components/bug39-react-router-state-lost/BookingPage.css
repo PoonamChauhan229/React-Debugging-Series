@@ -17,11 +17,11 @@ body {
 }
 
 .card {
-  width: 500px;
+  width: 520px;
   background: white;
   padding: 35px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
 }
 
 .heading {
@@ -51,11 +51,6 @@ body {
   font-size: 15px;
 }
 
-.input:focus {
-  outline: none;
-  border-color: #2563eb;
-}
-
 .button {
   width: 100%;
   padding: 12px;
@@ -73,8 +68,13 @@ body {
 
 .text {
   text-align: center;
-  color: #ef4444;
+  color: #444;
+  margin-top: 20px;
+}
+
+.error {
   margin-top: 25px;
-  font-size: 22px;
+  text-align: center;
+  color: #dc2626;
   font-weight: bold;
 }

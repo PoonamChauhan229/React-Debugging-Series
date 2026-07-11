@@ -24,7 +24,7 @@ const BookingPage = () => {
         </h2>
 
         <h3 className="subHeading">
-          Bug #39 - React Router State Lost on Refresh
+          Bug #39 - React Router State Not Available on Direct URL Access
         </h3>
 
         <label className="label">
