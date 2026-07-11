@@ -2,7 +2,11 @@ import { useState } from "react";
 import "./HotelBooking.css";
 
 const HotelBooking = () => {
-  const [guestName, setGuestName] = useState();
+  // Bug:
+  // const [guestName, setGuestName] = useState();
+  // guestName >> undefined -uncontrolledinput|- Rahul Sharma - defined value -controlled input
+  // controlled input
+   const [guestName, setGuestName] = useState("");// emty string >> controlled input 
 
   const loadGuest = () => {
     setGuestName("Rahul Sharma");
