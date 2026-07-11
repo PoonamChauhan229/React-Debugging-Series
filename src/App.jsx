@@ -76,6 +76,11 @@ function App() {
       {/* <TrainSearch/> */}
       {/* <NutritionTracker/> */}
       {/* <MovieBooking/> */}
+      {/* <MovieBooking/> */}
+      {/* <HospitalApp /> */}
+      <FlightStatus />
+
+
       {/* <HospitalApp/> */}
       {/* <FlightStatus/> */}
       {/* <HotelBooking/> */}
