@@ -44,6 +44,7 @@ import BookingPage from './components/bug39-react-router-state-lost/BookingPage'
 import EmployeeLeaveManagement from './components/bug40-useReducer-state-mutation/EmployeeLeaveManagement'
 import WeatherDashboard from './components/bug41-infinite-custom-hook-loop/WeatherDashboard'
 import NotificationDashboard from './components/bug42-custom-hook-sharing-state/NotificationDashboard'
+import PaymentDashboard from './components/bug43-error-boundary/PaymentDashboard'
 
 function App() {
 
@@ -91,7 +92,11 @@ function App() {
       {/* <SocialFeed/> */}
       {/* <EmployeeLeaveManagement/> */}
       {/* <WeatherDashboard/> */}
-    <NotificationDashboard/>
+    {/* <NotificationDashboard/> */}
+
+      <PaymentDashboard/>
+
+
       {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<BookingPage />} />
