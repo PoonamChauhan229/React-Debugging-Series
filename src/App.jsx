@@ -47,6 +47,7 @@ import NotificationDashboard from './components/bug42-custom-hook-sharing-state/
 import PaymentDashboard from './components/bug43-error-boundary/PaymentDashboard'
 import PropertyPortal from './components/bug44-error-boundary-render-error/PropertyPortal'
 import TravelExplorer from './components/bug45-chunk-load-error/TravelExplorer'
+import MuseumGuide from './components/bug46-invalid-hook-call/MuseumGuide'
 
 function App() {
 
@@ -98,7 +99,8 @@ function App() {
 
       {/* <PaymentDashboard/> */}
       {/* <PropertyPortal/> */}
-      <TravelExplorer />
+      {/* <TravelExplorer /> */}
+      <MuseumGuide/>
 
       {/* <BrowserRouter>
         <Routes>
