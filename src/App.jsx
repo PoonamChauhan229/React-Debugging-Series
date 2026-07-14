@@ -45,6 +45,7 @@ import EmployeeLeaveManagement from './components/bug40-useReducer-state-mutatio
 import WeatherDashboard from './components/bug41-infinite-custom-hook-loop/WeatherDashboard'
 import NotificationDashboard from './components/bug42-custom-hook-sharing-state/NotificationDashboard'
 import PaymentDashboard from './components/bug43-error-boundary/PaymentDashboard'
+import PropertyPortal from './components/bug44-error-boundary-render-error/PropertyPortal'
 
 function App() {
 
@@ -94,7 +95,8 @@ function App() {
       {/* <WeatherDashboard/> */}
     {/* <NotificationDashboard/> */}
 
-      <PaymentDashboard/>
+      {/* <PaymentDashboard/> */}
+      <PropertyPortal/>
 
 
       {/* <BrowserRouter>
