@@ -42,6 +42,7 @@ import ConfirmationPage from './components/bug39-react-router-state-lost/Confirm
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import BookingPage from './components/bug39-react-router-state-lost/BookingPage'
 import EmployeeLeaveManagement from './components/bug40-useReducer-state-mutation/EmployeeLeaveManagement'
+import WeatherDashboard from './components/bug41-infinite-custom-hook-loop/WeatherDashboard'
 
 function App() {
 
@@ -87,8 +88,8 @@ function App() {
       {/* <HotelBooking/> */}
       {/* <CourseCatalog/> */}
       {/* <SocialFeed/> */}
-      <EmployeeLeaveManagement/>
-
+      {/* <EmployeeLeaveManagement/> */}
+      <WeatherDashboard/>
       {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<BookingPage />} />
