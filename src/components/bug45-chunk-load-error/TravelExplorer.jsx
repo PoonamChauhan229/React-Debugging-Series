@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import "./TravelExplorer.css";
 
-// Simulating a Chunk Load Error
 const DestinationCard = lazy(() =>
   Promise.reject(
     new Error("ChunkLoadError: Loading chunk DestinationCard failed.")
