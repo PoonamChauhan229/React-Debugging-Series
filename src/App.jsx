@@ -41,6 +41,7 @@ import SocialFeed from './components/bug38-optimistic-ui-rollback/SocialFeed'
 import ConfirmationPage from './components/bug39-react-router-state-lost/ConfirmationPage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import BookingPage from './components/bug39-react-router-state-lost/BookingPage'
+import EmployeeLeaveManagement from './components/bug40-useReducer-state-mutation/EmployeeLeaveManagement'
 
 function App() {
 
@@ -86,8 +87,9 @@ function App() {
       {/* <HotelBooking/> */}
       {/* <CourseCatalog/> */}
       {/* <SocialFeed/> */}
+      <EmployeeLeaveManagement/>
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<BookingPage />} />
           <Route
@@ -95,7 +97,7 @@ function App() {
             element={<ConfirmationPage />}
           />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
 
     </>
   )
