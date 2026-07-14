@@ -43,6 +43,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import BookingPage from './components/bug39-react-router-state-lost/BookingPage'
 import EmployeeLeaveManagement from './components/bug40-useReducer-state-mutation/EmployeeLeaveManagement'
 import WeatherDashboard from './components/bug41-infinite-custom-hook-loop/WeatherDashboard'
+import NotificationDashboard from './components/bug42-custom-hook-sharing-state/NotificationDashboard'
 
 function App() {
 
@@ -89,7 +90,8 @@ function App() {
       {/* <CourseCatalog/> */}
       {/* <SocialFeed/> */}
       {/* <EmployeeLeaveManagement/> */}
-      <WeatherDashboard/>
+      {/* <WeatherDashboard/> */}
+    <NotificationDashboard/>
       {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<BookingPage />} />
