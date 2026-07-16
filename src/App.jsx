@@ -48,6 +48,8 @@ import PaymentDashboard from './components/bug43-error-boundary/PaymentDashboard
 import PropertyPortal from './components/bug44-error-boundary-render-error/PropertyPortal'
 import TravelExplorer from './components/bug45-chunk-load-error/TravelExplorer'
 import MuseumGuide from './components/bug46-invalid-hook-call/MuseumGuide'
+import FitnessTracker from './components/bug47-hooks-called-conditionally/FitnessTracker'
+import LeaveRequest from './components/bug48-duplicate-form-submission/LeaveRequest'
 
 function App() {
 
@@ -100,7 +102,9 @@ function App() {
       {/* <PaymentDashboard/> */}
       {/* <PropertyPortal/> */}
       {/* <TravelExplorer /> */}
-      <MuseumGuide/>
+      {/* <MuseumGuide/> */}
+      {/* <FitnessTracker/> */}
+      <LeaveRequest/>
 
       {/* <BrowserRouter>
         <Routes>

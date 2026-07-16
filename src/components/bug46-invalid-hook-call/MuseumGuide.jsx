@@ -2,12 +2,11 @@ import { useState } from "react";
 import "./MuseumGuide.css";
 
 const MuseumGuide = () => {
-
+  const [exhibit] = useState("Ancient Egypt");
+  
   const showExhibit = () => {
-
-    // ❌ Invalid Hook Call
-    const [exhibit] = useState("Ancient Egypt");
-
+    // Bug:
+    // const [exhibit] = useState("Ancient Egypt");
     alert(`Current Exhibit: ${exhibit}`);
   };
 
