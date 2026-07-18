@@ -50,6 +50,8 @@ import TravelExplorer from './components/bug45-chunk-load-error/TravelExplorer'
 import MuseumGuide from './components/bug46-invalid-hook-call/MuseumGuide'
 import FitnessTracker from './components/bug47-hooks-called-conditionally/FitnessTracker'
 import LeaveRequest from './components/bug48-duplicate-form-submission/LeaveRequest'
+import MedicalAppointment from './components/bug49-validation-errors-not-clearing/MedicalAppointment'
+import CourierPickup from './components/bug50-reset-validation-errors/CourierPickup'
 
 function App() {
 
@@ -104,7 +106,9 @@ function App() {
       {/* <TravelExplorer /> */}
       {/* <MuseumGuide/> */}
       {/* <FitnessTracker/> */}
-      <LeaveRequest/>
+      {/* <LeaveRequest/> */}
+      {/* <MedicalAppointment/> */}
+      <CourierPickup/>
 
       {/* <BrowserRouter>
         <Routes>

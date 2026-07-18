@@ -1,8 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef, useState} from "react";
 import "./VisitorCounter.css";
 
 const VisitorCounter = () => {
-  // Bug
+  // Bug:
   // const visitorCount = useRef(0);
   // const increaseVisitor = () => {
   //   visitorCount.current++;
@@ -12,6 +12,7 @@ const VisitorCounter = () => {
   const increaseVisitor = () => {
     setVisitorCount((prev)=>prev+1)
   }
+
   return (
     <div className="container">
       <div className="card">
@@ -25,7 +26,7 @@ const VisitorCounter = () => {
           {/* <h1>{visitorCount.current}</h1> */}
           {/* Fix Bug */}
           <h1>{visitorCount}</h1>
-        </div>
+         </div>
 
         <button
           className="visit-btn"
